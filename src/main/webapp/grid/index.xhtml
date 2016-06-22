@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
+	template="/template/template.xhtml" xmlns:j="http://jainfaces.org/ui">
+
+	<ui:define name="head">
+		<link type="text/css" rel="stylesheet"
+			href="#{request.contextPath}/resources/css/grid-default.css" />
+	</ui:define>
+
+	<ui:define name="content">
+		<h1>JN-Grid</h1>
+		<ul>
+			<li><strong>JN-Grid</strong> is a mobile friendly Responsive and Adaptive 20 column Grid
+				Layout.</li>
+			<li>It allows us to create column inside column, but there is no concept of creating ROW
+				unlike available in Grid CSS.</li>
+		</ul>
+
+		<j:grid styleClass="grid-layout" columns="20">
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+			<h:outputText value="1" />
+
+			<p:column colspan="10">
+				<h:outputText value="10" />
+			</p:column>
+			<p:column colspan="10">
+				<h:outputText value="10" />
+			</p:column>
+
+			<p:column colspan="9">
+				<h:outputText value="9" />
+			</p:column>
+			<p:column colspan="11">
+				<h:outputText value="11" />
+			</p:column>
+
+			<p:column colspan="8">
+				<h:outputText value="8" />
+			</p:column>
+			<p:column colspan="12">
+				<h:outputText value="12" />
+			</p:column>
+
+			<p:column colspan="7">
+				<h:outputText value="7" />
+			</p:column>
+			<p:column colspan="13">
+				<h:outputText value="13" />
+			</p:column>
+
+			<p:column colspan="6">
+				<h:outputText value="6" />
+			</p:column>
+			<p:column colspan="14">
+				<h:outputText value="14" />
+			</p:column>
+
+			<p:column colspan="5">
+				<h:outputText value="5" />
+			</p:column>
+			<p:column colspan="15">
+				<h:outputText value="15" />
+			</p:column>
+
+			<p:column colspan="4">
+				<h:outputText value="4" />
+			</p:column>
+			<p:column colspan="16">
+				<h:outputText value="16" />
+			</p:column>
+
+			<p:column colspan="3">
+				<h:outputText value="3" />
+			</p:column>
+			<p:column colspan="17">
+				<h:outputText value="17" />
+			</p:column>
+
+			<p:column colspan="2">
+				<h:outputText value="2" />
+			</p:column>
+			<p:column colspan="18">
+				<h:outputText value="18" />
+			</p:column>
+
+			<p:column colspan="1">
+				<h:outputText value="1" />
+			</p:column>
+			<p:column colspan="19">
+				<h:outputText value="19" />
+			</p:column>
+
+			<p:column colspan="20">
+				<h:outputText value="20" />
+			</p:column>
+
+			<p:column colspan="20" styleClass="no-border">
+				<j:grid columns="5" template="1,3,5,7,4" styleClass="no-border">
+					<h:outputText value="1" />
+					<h:outputText value="3" />
+					<h:outputText value="5" />
+					<h:outputText value="7" />
+					<h:outputText value="4" />
+				</j:grid>
+			</p:column>
+		</j:grid>
+	</ui:define>
+</ui:composition>

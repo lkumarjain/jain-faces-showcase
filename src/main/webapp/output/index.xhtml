@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
+	template="/template/template.xhtml" xmlns:j="http://jainfaces.org/ui">
+
+	<ui:define name="head">
+		<link type="text/css" rel="stylesheet"
+			href="#{request.contextPath}/resources/css/output-default.css" />
+	</ui:define>
+
+	<ui:define name="content">
+		<h1>JN-Output</h1>
+
+		<j:grid columns="4">
+			<j:output value="1" />
+			<j:output value="Bage With &lt;i&gt;Escape False&lt;/i&gt;" />
+			<j:output value="Bage With Icon" valueIcon="fa fa-camera" />
+			<j:output value="Bage With Icon and &lt;b&gt;Escape True&lt;/b&gt;" valueIcon="fa fa-camera" escape="true" />
+
+			<j:output label="Label With Icon" labelIcon="fa fa-check-square" value="Value With Icon"
+				valueIcon="fa fa-camera" />
+			<j:output label="Label Without Icon" value="Value With Icon" valueIcon="fa fa-camera" />
+			<j:output label="Label With Icon" labelIcon="fa fa-check-square" value="Value Without Icon" />
+			<j:output label="Label Without Icon" value="Value Without Icon" />
+
+			<j:output label="Label With Icon" labelIcon="fa fa-check-square" value="Value With Icon"
+				valueIcon="fa fa-camera" type="VERTICAL" />
+			<j:output label="Label" value="Value With Icon" valueIcon="fa fa-camera" type="VERTICAL" />
+			<j:output label="Label With Icon" labelIcon="fa fa-check-square" value="Value" type="VERTICAL" />
+			<j:output label="Label Without Icon" value="Value Without Icon" type="VERTICAL" />
+
+			<j:output label="Label With Icon" labelIcon="fa fa-check-square" value="Value With Icon"
+				valueIcon="fa fa-camera" type="HORIZONTAL" />
+			<j:output label="Label Without Icon" value="Value With Icon" valueIcon="fa fa-camera"
+				type="HORIZONTAL" />
+			<j:output label="Label With Icon" labelIcon="fa fa-check-square" value="Value Without Icon"
+				type="HORIZONTAL" />
+			<j:output label="Label Without Icon" value="Value Without Icon" type="HORIZONTAL" />
+		</j:grid>
+	</ui:define>
+</ui:composition>

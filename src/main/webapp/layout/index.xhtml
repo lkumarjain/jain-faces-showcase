@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core" template="/template/template.xhtml"
+	xmlns:j="http://jainfaces.org/ui">
+	
+	<ui:define name="head">
+		<link type="text/css" rel="stylesheet" href="#{request.contextPath}/resources/css/layout-default.css" />
+	</ui:define>
+	
+	<ui:define name="content">
+		<h1>JN-Layout</h1>
+
+		<j:layout>
+			<j:layoutPane label="North" position="north">
+				<p:outputLabel value="North Content" />
+			</j:layoutPane>
+			<j:layoutPane label="East" position="east">
+				<p:outputLabel value="East Content" />
+			</j:layoutPane>
+			<j:layoutPane label="West" position="west">
+				<p:outputLabel value="West Content" />
+			</j:layoutPane>
+			<j:layoutPane label="Center" position="center">
+				<j:layoutPane label="North-1" position="north">
+					<p:outputLabel value="North Content" />
+				</j:layoutPane>
+				<j:layoutPane label="East-1" position="east">
+					<p:outputLabel value="East Content" />
+				</j:layoutPane>
+				<j:layoutPane label="West-1" position="west">
+					<p:outputLabel value="West Content" />
+				</j:layoutPane>
+				<j:layoutPane label="Center" position="center">
+					<p:outputLabel value="Center Content" />
+				</j:layoutPane>
+				<j:layoutPane label="South-1" position="south">
+					<p:outputLabel value="South Content" />
+				</j:layoutPane>
+			</j:layoutPane>
+			<j:layoutPane label="South" position="south">
+				<p:outputLabel value="South Content" />
+			</j:layoutPane>
+		</j:layout>
+	</ui:define>
+</ui:composition>

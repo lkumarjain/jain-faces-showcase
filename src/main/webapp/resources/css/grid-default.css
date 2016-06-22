@@ -1,0 +1,26 @@
+.jn-w-1, .jn-w-2, .jn-w-3, .jn-w-4, .jn-w-5, .jn-w-6, .jn-w-7, .jn-w-8,
+	.jn-w-9, .jn-w-10, .jn-w-11, .jn-w-12, .jn-w-13, .jn-w-14, .jn-w-15,
+	.jn-w-16, .jn-w-17, .jn-w-18, .jn-w-19, .jn-w-20 {
+	border: 1px solid #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-weight: 400;
+	font-size: 20px;
+	-webkit-font-smoothing: antialiased;
+	margin-bottom: 2px;
+}
+
+.grid-layout {
+	text-align: center;
+	background: rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+	box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+	padding: 5px;
+}
+.no-border {
+	border: none !important;
+}

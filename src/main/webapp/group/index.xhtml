@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+                      "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
+	template="/template/template.xhtml" xmlns:j="http://jainfaces.org/ui">
+
+	<ui:define name="content">
+		<h1>Jain-Group</h1>
+		<h:form>
+			<!-- Group-1 -->
+			<j:group>
+				<p:inputText id="input1" required="true" />
+
+				<f:facet name="TOP">
+					<p:outputLabel for="input1" value="Label" />
+				</f:facet>
+				<f:facet name="LEFT">
+					<p:commandButton value="1" process="@form" update="@form" />
+					<p:commandButton value="2" process="@form" update="@form" />
+				</f:facet>
+				<f:facet name="RIGHT">
+					<p:commandButton icon="ui-icon-check" process="@form" update="@form" />
+					<p:commandButton icon="ui-icon-search" process="@form" update="@form" />
+				</f:facet>
+				<f:facet name="BOTTOM">
+					<p:messages id="messages1" for="input1" showDetail="true" closable="true" escape="false" />
+				</f:facet>
+			</j:group>
+
+			<p:separator />
+
+			<!-- Group-2 -->
+			<j:group>
+				<p:inputText id="input2" required="true" />
+
+				<f:facet name="TOP">
+					<p:outputLabel for="input2" value="Label" />
+				</f:facet>
+				<f:facet name="LEFT">
+					<p:commandButton value="1" process="@form" update="@form" />
+					<p:commandButton value="2" process="@form" update="@form" />
+				</f:facet>
+				<f:facet name="BOTTOM">
+					<p:messages id="messages2" for="input2" showDetail="true" closable="true" escape="false" />
+				</f:facet>
+			</j:group>
+
+			<p:separator />
+
+			<!-- Group-3 -->
+
+			<j:group>
+				<p:inputText id="input3" required="true" />
+
+				<f:facet name="TOP">
+					<p:outputLabel for="input3" value="Label" />
+				</f:facet>
+				<f:facet name="RIGHT">
+					<p:commandButton icon="ui-icon-check" process="@form" update="@form" />
+					<p:commandButton icon="ui-icon-search" process="@form" update="@form" />
+				</f:facet>
+				<f:facet name="BOTTOM">
+					<p:messages id="messages3" showDetail="true" closable="true" escape="false" for="input3" />
+				</f:facet>
+			</j:group>
+
+			<p:separator />
+
+			<!-- Group-4 -->
+
+			<j:group>
+				<p:inputText id="input4" required="true" />
+
+				<f:facet name="TOP">
+					<p:outputLabel for="input4" value="Label" />
+				</f:facet>
+				<f:facet name="BOTTOM">
+					<p:messages id="messages4" for="input4" showDetail="true" closable="true" escape="false" />
+				</f:facet>
+			</j:group>
+		</h:form>
+	</ui:define>
+</ui:composition>
