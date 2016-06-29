@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
-	xmlns:h="http://java.sun.com/jsf/html" xmlns:p="http://primefaces.org/ui"
-	xmlns:f="http://java.sun.com/jsf/core" xmlns:c="http://java.sun.com/jsp/jstl/core"
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
 	template="template/template.xhtml" xmlns:j="http://jainfaces.org/ui">
 
 	<ui:define name="head">
@@ -12,59 +15,62 @@
 	</ui:define>
 
 	<ui:define name="content">
-		<h1>Jain-Faces</h1>
-		<span class="jn-output jn-output-bage ui-button">1</span>
+		<h3>
+			<a class="anchor" href="https://github.com/lkumarjain/jain-faces"
+				aria-hidden="true"> <span aria-hidden="true"
+				class="octicon octicon-link"> Jain-Faces </span>
+			</a>
+		</h3>
 
-		<div class="ui-widget jn-output ui-widget-content jn-output-with-header">
-			<div class="jn-output-header">
-				<i class="fa fa-check-square jn-output-header-icon"></i>
-				<div class="jn-output-header-text">Header</div>
-			</div>
-			<hr style="margin: 7px 0px;" />
-			<div class="jn-output-text-with-icon">
-				<i class="fa fa-camera jn-output-text-icon"></i>
-				<div class="jn-output-text">VALUE</div>
-			</div>
-		</div>
+		<ul>
+			<li>This is an extension library to <a
+				href="http://primefaces.org/" class="user-mention">Prime-Faces</a>
+				to support some messing components from both <a
+				href="http://www.primefaces.org/showcase/" class="user-mention">Prime-Faces</a>
+				and <a href="http://www.primefaces.org/showcase-ext/views/home.jsf"
+				class="user-mention">Prime-Faces Extension</a>.
+			</li>
+			<li>All the components available in this library are Mobile
+				friendly and created using <code>Responsive</code> and <code>Adaptive</code>
+				<code>CSS</code>.
+			</li>
+			<li><span aria-hidden="true" class="octicon octicon-link">This
+					component library Includes following Components</span>
+				<ul>
+					<li><a
+						href="https://github.com/lkumarjain/jain-faces-showcase/blob/master/src/main/webapp/layout/index.xhtml"
+						class="user-mention">JN-Layout</a></li>
+					<li><a
+						href="https://github.com/lkumarjain/jain-faces-showcase/blob/master/src/main/webapp/grid/index.xhtml"
+						class="user-mention">JN-Grid</a></li>
+					<li><a
+						href="https://github.com/lkumarjain/jain-faces-showcase/blob/master/src/main/webapp/output/index.xhtml"
+						class="user-mention">JN-Output</a></li>
+					<li><a
+						href="https://github.com/lkumarjain/jain-faces-showcase/blob/master/src/main/webapp/group/index.xhtml"
+						class="user-mention">JN-Group</a></li>
+				</ul></li>
+			<li><span aria-hidden="true" class="octicon octicon-link">This
+					library Includes</span>
+				<ul>
+					<li>Couple of most useful common methods needs while <code>JSF</code>
+						application development
+					</li>
+				</ul></li>
+			<li><span aria-hidden="true" class="octicon octicon-link">Common
+					Convertor</span>
+				<ul>
+					<li>This can be used in any <code>JSF</code> application or
+						object to convert them back and forth
+					</li>
+					<li>This needs a common interface <code>JNIIdentificable</code>
+						to be impmeneted by any object
+					</li>
+				</ul></li>
+		</ul>
 
-		<div class="ui-widget ui-widget-content jn-output jn-output-with-header">
-			<div class="jn-output-header">
-				<div class="jn-output-header-text">Header</div>
-			</div>
-			<hr style="margin: 7px 0px;" />
-			<div class="jn-output-text">VALUE</div>
-		</div>
-
-		<div class="ui-widget jn-output">
-			<div class="jn-output-label">LABEL</div>
-			<div class="jn-output-text">VALUE</div>
-		</div>
-
-		<div class="ui-widget jn-output">
-			<div class="jn-output-text-with-icon">
-				<i class="fa fa-check-square jn-output-text-icon"></i>
-				<div class="jn-output-label">LABEL</div>
-			</div>
-			<div class="jn-output-text-with-icon">
-				<i class="fa fa-camera jn-output-text-icon"></i>
-				<div class="jn-output-text">VALUE</div>
-			</div>
-		</div>
-
-		<div class="ui-widget jn-output jn-output-horizontal">
-			<div class="jn-output-label">LABEL</div>
-			<div class="jn-output-text">VALUE</div>
-		</div>
-
-		<div class="ui-widget jn-output jn-output-horizontal">
-			<div class="jn-output-text-with-icon">
-				<i class="fa fa-check-square jn-output-text-icon"></i>
-				<div class="jn-output-label">LABEL</div>
-			</div>
-			<div class="jn-output-text-with-icon">
-				<i class="fa fa-camera jn-output-text-icon"></i>
-				<div class="jn-output-text">VALUE</div>
-			</div>
-		</div>
+		<h3>Authors and Contributors</h3>
+Any suggestions and contributions are welcomed at <a
+			href="https://github.com/lkumarjain" class="user-mention">Git</a>
 	</ui:define>
 </ui:composition>
